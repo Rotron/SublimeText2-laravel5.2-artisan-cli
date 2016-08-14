@@ -1,0 +1,82 @@
+[
+{
+	"id" : "ArtisanHelp",
+	"caption" : "Artisan",
+	"command" : "artisan"
+},{
+	"id" : "ArtisanApp",
+	"caption" : "Artisan App:name",
+	"command" : "artisan_app"
+},{
+	"id" : "ArtisanAuth",
+	"caption" : "Artisan Auth:clear-reset",
+	"command" : "artisan_auth"
+},{
+	"id" : "ArtisanCache",
+	"caption" : "Artisan Cache:clear,table",
+	"command" : "artisan_cache"
+},{
+	"id" : "ArtisanConfig",
+	"caption" : "Artisan Config:cahce,clear",
+	"command" : "artisan_config"
+},{
+	"id" : "ArtisanDb",
+	"caption" : "Artisan Db:seed",
+	"command" : "artisan_db"
+},{
+	"id" : "ArtisanCreateProject",
+	"caption" : "Artisan Create Project Via Composer",
+	"command" : "artisan_create_project"
+},{
+	"id" : "ArtisanKey",
+	"caption" : "Artisan Key:generate",
+	"command" : "artisan_key"
+},{
+	"id" : "ArtisanEvent",
+	"caption" : "Artisan Event:generate",
+	"command" : "artisan_event"
+},{
+	"id" : "Artisanmigrate",
+	"caption" : "Artisan Migrate",
+	"command" : "artisan_migrate"
+},{
+	"id" : "Artisanserve",
+	"caption" : "Artisan Serve",
+	"command" : "artisan_serve"
+},{
+	"id" : "Artisanservestop",
+	"caption" : "Artisan STOP Serve",
+	"command" : "artisan_servestop"
+},{
+	"id" : "ArtisanMake",
+	"caption" : "Artisan Make:",
+	"command" : "artisan_make"
+},{
+	"id" : "ArtisanMigrate",
+	"caption" : "Artisan Migrate:",
+	"command" : "artisan_migrate"
+},{
+	"id" : "ArtisanQueue",
+	"caption" : "Artisan Queue:",
+	"command" : "artisan_queue"
+},{
+	"id" : "ArtisanRoute",
+	"caption" : "Artisan Route:cache,clear,list",
+	"command" : "artisan_route"
+},{
+	"id" : "ArtisanSchedule",
+	"caption" : "Artisan Schedule:run",
+	"command" : "artisan_schedule"
+},{
+	"id" : "ArtisanSession",
+	"caption" : "Artisan Session:table",
+	"command" : "artisan_session"
+},{
+	"id" : "ArtisanVendor",
+	"caption" : "Artisan Vendor:publish",
+	"command" : "artisan_vendor"
+},{
+	"id" : "ArtisanView",
+	"caption" : "Artisan View:clear",
+	"command" : "artisan_view"
+}]
