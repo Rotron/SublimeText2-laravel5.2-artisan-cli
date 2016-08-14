@@ -2,28 +2,26 @@
 
 Sublime Text plugin to replace Laravel 5.2 Artisan CLI
 
-
 This plugin allows you the run the normal Artisan CLI using the Sublime Text interface,
 without having to open and use the command line.
-
+------------------------------------------------------------------------------------------------------------------
 Options Available:
 
 NEW! - Implementation for Stop and Serve Php development server.
 
 Available commands:
 
-       Serve               Serve the application on the PHP development server - NEW!
-       STOP Serve          Stop the application on the PHP development server - NEW!
-       clear-compiled      Remove the compiled class file
-       down                Put the application into maintenance mode
-       env                 Display the current framework environment
-       help                Displays help for a command
-       list                Lists commands
+       Serve               Serve the application on the PHP development server -                 NEW!
+       STOP Serve          Stop the application on the PHP development server -                  NEW!
+       clear-compiled      Remove the compiled class file                                  (IN DEVELOPMENT)
+       down                Put the application into maintenance mode                       (IN DEVELOPMENT)
+       env                 Display the current framework environment                       (IN DEVELOPMENT)
+       help                Displays help for a command                                     (IN DEVELOPMENT)
+       list                Lists commands                                                  (IN DEVELOPMENT)
        migrate             Run the database migrations
-       optimize            Optimize the framework for better performance
-       serve               Serve the application on the PHP development server
-       tinker              Interact with your application
-       up                  Bring the application out of maintenance mode
+       optimize            Optimize the framework for better performance                   (IN DEVELOPMENT)
+       tinker              Interact with your application                                  (IN DEVELOPMENT)
+       up                  Bring the application out of maintenance mode                   (IN DEVELOPMENT)
       app
        app:name            Set the application namespace
       auth
@@ -99,8 +97,12 @@ Just press Cmd + Shift + P for the dropdown command list, and search for compose
 
 Or
 
-NOTE: At the current moment, for the plugin to run correctly the artisan file needs to been in the root folder of your structure in the Side bar.
+NOTE: 
+At the current moment,
+for the plugin to run correctly the artisan file
+needs to been in the root folder of your structure in the Side bar.
+
+------------------------------------------------------------------------------------------------------------------
 
 Give some feedback.
-
 Thanks.
