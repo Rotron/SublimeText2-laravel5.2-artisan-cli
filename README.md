@@ -11,13 +11,9 @@ Options Available:
 NEW! - Implementation for Stop and Serve Php development server.
 
 Available commands:
-NEW FEATURES:
 
-       Serve               Serve the application on the PHP development server
-       STOP Serve          Stop the application on the PHP development server
-
------------------------------------------------------------------------------
-
+       Serve               Serve the application on the PHP development server - NEW!
+       STOP Serve          Stop the application on the PHP development server - NEW!
        clear-compiled      Remove the compiled class file
        down                Put the application into maintenance mode
        env                 Display the current framework environment
