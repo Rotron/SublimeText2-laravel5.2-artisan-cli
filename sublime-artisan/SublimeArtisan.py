@@ -16,7 +16,7 @@ class Artisan(sublime_plugin.TextCommand):
 
 class ArtisanCreateProject(sublime_plugin.WindowCommand):
 	def run(self):
-		self.window.show_input_panel("[name] [args]", "", self.on_done, None, None)
+		self.window.show_input_panel("[Insert your Project name]", "", self.on_done, None, None)
 
 	def on_done(self, generate_command):
 		try:
@@ -28,10 +28,9 @@ class ArtisanCreateProject(sublime_plugin.WindowCommand):
 			print ([cmd, args[0:]])
 			
 			self.window.run_command("exec", {
-				"cmd" : ["composer create-project --prefer-dist laravel/laravel", cmd],
-				"shell" : False,
+				"cmd" : ["php /usr/local/bin/composer create-project --prefer-dist laravel/laravel " + cmd],
+				"shell" : True,
 				"working_dir" : folder})
-
 		except ValueError:
 			pass
 
