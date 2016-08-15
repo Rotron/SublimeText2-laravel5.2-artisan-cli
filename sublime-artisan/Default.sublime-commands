@@ -1,6 +1,34 @@
 [
 {
 	"id" : "ArtisanHelp",
+	"caption" : "Artisan Help",
+	"command" : "artisan_help"
+},{
+	"id" : "ArtisanList",
+	"caption" : "Artisan List",
+	"command" : "artisan_list"
+},{
+	"id" : "ArtisanUp",
+	"caption" : "Artisan Up",
+	"command" : "artisan_up"
+},{
+	"id" : "ArtisanDown",
+	"caption" : "Artisan Down",
+	"command" : "artisan_down"
+},{
+	"id" : "ArtisanTinker",
+	"caption" : "Artisan Tinker",
+	"command" : "artisan_tinker"
+},{
+	"id" : "ArtisanOptimize",
+	"caption" : "Artisan Optimize",
+	"command" : "artisan_optimize"
+},{
+	"id" : "ArtisanEnv",
+	"caption" : "Artisan Env",
+	"command" : "artisan_env"
+},{
+	"id" : "ArtisanHelp",
 	"caption" : "Artisan",
 	"command" : "artisan"
 },{
