@@ -9,20 +9,23 @@ Options Available:
 
 NEW! - Implementation for Stop and Serve Php development server.
 NEW! - Composer Laravel Install
+NEW! - Tinker with interactive Shell
 
 Available commands:
+
+       Tinker              Open a Terminal window Psy Shell                                      NEW!
        Composer            Install a new Laravel Project                                         NEW!
        Serve               Serve the application on the PHP development server -                 NEW!
        STOP Serve          Stop the application on the PHP development server -                  NEW!
-       clear-compiled      Remove the compiled class file                                  (IN DEVELOPMENT)
-       down                Put the application into maintenance mode                       (IN DEVELOPMENT)
-       env                 Display the current framework environment                       (IN DEVELOPMENT)
-       help                Displays help for a command                                     (IN DEVELOPMENT)
-       list                Lists commands                                                  (IN DEVELOPMENT)
+       clear-compiled      Remove the compiled class file                                  
+       down                Put the application into maintenance mode
+       env                 Display the current framework environment
+       help                Displays help for a command
+       list                Lists commands
        migrate             Run the database migrations
-       optimize            Optimize the framework for better performance                   (IN DEVELOPMENT)
-       tinker              Interact with your application                                  (IN DEVELOPMENT)
-       up                  Bring the application out of maintenance mode                   (IN DEVELOPMENT)
+       optimize            Optimize the framework for better performance                   
+       tinker              Interact with your application                                  
+       up                  Bring the application out of maintenance mode
       app
        app:name            Set the application namespace
       auth
