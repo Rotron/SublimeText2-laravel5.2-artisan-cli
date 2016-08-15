@@ -88,6 +88,8 @@ Available commands:
   
 INSTALLATION
 
+<img src ="https://camo.githubusercontent.com/11f388b66e7aa33b8b81ec410b60054aeaecbc6c/687474703a2f2f672e7265636f726469742e636f2f31345845424356764c4e2e676966">
+
 1). Copy sublime-artisa inside the Packages Folder.
 
     Follow this for get the Package Folder
@@ -96,6 +98,8 @@ INSTALLATION
     Sublime Text2 -> Preferences -> Browse Packages..
 
 2) For create a new Laravel Project
+
+<img src ="https://camo.githubusercontent.com/eb7422d18e4085a982b150fbb1991d674fed9518/687474703a2f2f672e7265636f726469742e636f2f54396d51643067514b362e676966">
 
 Just press Cmd + Shift + P for the dropdown command list, and search for composer.
 
