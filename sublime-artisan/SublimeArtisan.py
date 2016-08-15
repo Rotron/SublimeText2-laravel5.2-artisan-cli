@@ -1,6 +1,83 @@
 import sublime, sublime_plugin, os
 import subprocess
 
+class ArtisanHelp(sublime_plugin.TextCommand):
+	def run(self, edit):
+
+		folder = self.view.window().folders()[0]
+		os.chdir(folder)
+
+		self.view.window().run_command("exec", {
+			"cmd" : ["php artisan help"],
+			"shell" : True,
+			"working_dir" : folder})
+
+class ArtisanList(sublime_plugin.TextCommand):
+	def run(self, edit):
+
+		folder = self.view.window().folders()[0]
+		os.chdir(folder)
+
+		self.view.window().run_command("exec", {
+			"cmd" : ["php artisan list"],
+			"shell" : True,
+			"working_dir" : folder})
+
+class ArtisanUp(sublime_plugin.TextCommand):
+	def run(self, edit):
+
+		folder = self.view.window().folders()[0]
+		os.chdir(folder)
+
+		self.view.window().run_command("exec", {
+			"cmd" : ["php artisan up"],
+			"shell" : True,
+			"working_dir" : folder})
+
+class ArtisanDown(sublime_plugin.TextCommand):
+	def run(self, edit):
+
+		folder = self.view.window().folders()[0]
+		os.chdir(folder)
+
+		self.view.window().run_command("exec", {
+			"cmd" : ["php artisan down"],
+			"shell" : True,
+			"working_dir" : folder})
+
+class ArtisanTinker(sublime_plugin.TextCommand):
+	def run(self, edit):
+
+		folder = self.view.window().folders()[0]
+		os.chdir(folder)
+
+		self.view.window().run_command("exec", {
+			"cmd" : ["osascript -e 'tell application \"Terminal\" to do script \"php "+folder+"/artisan tinker\"'"],
+			"shell" : True,
+			"working_dir" : folder})
+
+class ArtisanOptimize(sublime_plugin.TextCommand):
+	def run(self, edit):
+
+		folder = self.view.window().folders()[0]
+		os.chdir(folder)
+
+		self.view.window().run_command("exec", {
+			"cmd" : ["php artisan optimize"],
+			"shell" : True,
+			"working_dir" : folder})
+
+class ArtisanEnv(sublime_plugin.TextCommand):
+	def run(self, edit):
+
+		folder = self.view.window().folders()[0]
+		os.chdir(folder)
+
+		self.view.window().run_command("exec", {
+			"cmd" : ["php artisan env"],
+			"shell" : True,
+			"working_dir" : folder})
+
 class Artisan(sublime_plugin.TextCommand):
 	def run(self, edit):
 
@@ -39,11 +116,11 @@ class ArtisanApp(sublime_plugin.WindowCommand):
 			folder = self.window.folders()[0]
 			os.chdir(folder)
 			args = generate_command.split(" ")
-			cmd = "app:name " + args[0]
-			print (["php", "artisan", cmd, args[1:]])
+			cmd = args[0]
+			print (["php", "artisan", cmd, args[0:]])
 			self.window.run_command("exec", {
-				"cmd" : ["php artisan", cmd],
-				"shell" : False,
+				"cmd" : ["php artisan app:name " + cmd],
+				"shell" : True,
 				"working_dir" : folder})
 		except ValueError:
 			pass
@@ -53,8 +130,8 @@ class ArtisanAuth(sublime_plugin.TextCommand):
 		folder = self.view.window().folders()[0]
 		os.chdir(folder)
 		self.view.window().run_command("exec", {
-			"cmd" : ["php", "artisan", "auth:clear-reset"],
-			"shell" : False,
+			"cmd" : ["php artisan auth:clear-reset"],
+			"shell" : True,
 			"working_dir" : folder})
 
 class ArtisanCache(sublime_plugin.WindowCommand):
@@ -96,8 +173,8 @@ class ArtisanDb(sublime_plugin.TextCommand):
 		folder = self.view.window().folders()[0]
 		os.chdir(folder)
 		self.view.window().run_command("exec", {
-			"cmd" : ["php", "artisan", "db:seed"],
-			"shell" : False,
+			"cmd" : ["php artisan db:seed"],
+			"shell" : True,
 			"working_dir" : folder})
 
 class ArtisanEvent(sublime_plugin.TextCommand):
@@ -105,8 +182,8 @@ class ArtisanEvent(sublime_plugin.TextCommand):
 		folder = self.view.window().folders()[0]
 		os.chdir(folder)
 		self.view.window().run_command("exec", {
-			"cmd" : ["php", "artisan", "event:generate"],
-			"shell" : False,
+			"cmd" : ["php artisan event:generate"],
+			"shell" : True,
 			"working_dir" : folder})
 
 class ArtisanKey(sublime_plugin.TextCommand):
@@ -114,8 +191,8 @@ class ArtisanKey(sublime_plugin.TextCommand):
 		folder = self.view.window().folders()[0]
 		os.chdir(folder)
 		self.view.window().run_command("exec", {
-			"cmd" : ["php", "artisan", "key:generate"],
-			"shell" : False,
+			"cmd" : ["php artisan key:generate"],
+			"shell" : True,
 			"working_dir" : folder})
 
 class ArtisanMigrateCommand(sublime_plugin.TextCommand):
@@ -123,8 +200,8 @@ class ArtisanMigrateCommand(sublime_plugin.TextCommand):
 		folder = self.view.window().folders()[0]
 		os.chdir(folder)	
 		self.view.window().run_command("exec", {
-			"cmd" : ["php", "artisan", "migrate"],
-			"shell" : False,
+			"cmd" : ["php artisan migrate"],
+			"shell" : True,
 			"working_dir" : folder})
 
 class ArtisanServeCommand(sublime_plugin.TextCommand):
@@ -132,7 +209,7 @@ class ArtisanServeCommand(sublime_plugin.TextCommand):
 		folder = self.view.window().folders()[0]
 		os.chdir(folder)
 		self.view.window().run_command("exec", {
-			"cmd" : ["php artisan serve"],
+			"cmd" : ["pkill -9 php && php artisan serve"],
 			"shell" : True,
 			"working_dir" : folder})
 
