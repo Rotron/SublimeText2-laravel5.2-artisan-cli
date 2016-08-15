@@ -8,9 +8,10 @@ without having to open and use the command line.
 Options Available:
 
 NEW! - Implementation for Stop and Serve Php development server.
+NEW! - Composer Laravel Install
 
 Available commands:
-
+       Composer            Install a new Laravel Project                                         NEW!
        Serve               Serve the application on the PHP development server -                 NEW!
        STOP Serve          Stop the application on the PHP development server -                  NEW!
        clear-compiled      Remove the compiled class file                                  (IN DEVELOPMENT)
