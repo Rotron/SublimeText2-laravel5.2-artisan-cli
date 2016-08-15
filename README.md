@@ -84,7 +84,7 @@ Available commands:
   
 INSTALLATION
 
-1). Copy SublimeArtisan inside the Packages Folder.
+1). Copy SublimeText2-laravel5.2-artisan-cli-master inside the Packages Folder.
 
     Follow this for get the Package Folder
 
