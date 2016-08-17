@@ -209,7 +209,7 @@ class ArtisanServeCommand(sublime_plugin.TextCommand):
 		folder = self.view.window().folders()[0]
 		os.chdir(folder)
 		self.view.window().run_command("exec", {
-			"cmd" : ["pkill -9 php && php artisan serve"],
+			"cmd" : ["pkill -9 php; php artisan serve"],
 			"shell" : True,
 			"working_dir" : folder})
 
